@@ -1,9 +1,9 @@
 ##1.什么是Git?
 >**Git** 是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目
->
+
 ##2.什么是GitHub?
 >**GitHub**是一个面向开源及私有软件项目的托管平台，因为只支持Git作为唯一的版本库格式进行托管，故名**GitHub**
->
+
 ##3.git如何从master分支创建develop分支?
 -	假设已建立仓库 testGit，默认分支为master
 -	创建develop分支` git branch develop` 或 `git checkout -b develop`（创建并切换至develop分支）
