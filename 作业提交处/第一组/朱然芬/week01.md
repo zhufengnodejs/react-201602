@@ -19,12 +19,20 @@
 ##7.babel-cli这个模块提供了那两个命令?
 > babel 和 babel-node
 ##8.babel是什么?babel能够做什么,能够解析那些语法?
->
+> babel是一个通用的多用途javascript编译器，能够将不同版本的js进行转换，如将es6转换成es5的句法，也可以解析jsx的语法
 ##9.babel的配置文件是什么? preset 和 plugin 的区别和关联?
->
+> babel配置文件是`.babelrc` ，plugin功能单一，preset是多个plugin的集合
 ##10.babel 编译单个 文件使用什么命令?
+假设原文件为src/index.js，目标文件为dist/index.js
 ```
+babel  src/index.js -o dist/index.js
+```
+也可以不指定目标路径，直接输出至终端
+```
+bebel src/index.js
 ```
 ##11.babel 编译文件夹 使用什么命令?
+假设源文件夹为src，目标文件夹为dist
 ```
+babel src -d dist
 ```
