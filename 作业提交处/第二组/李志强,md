@@ -1,0 +1,56 @@
+1. Git是一款免费、开源的分布式版本控制系统，用于敏捷高效地处理任何或小或大的项目
+
+2. github以托管各种git库，并提供一个web界面，可以说是一款易于使用的git图形客户端。
+
+3. git branch develop
+
+4. git checkout branch_name      分支切换之前确保没有任何操作
+
+
+5. git  status 查看状态       红色表示是新的文件或者有改动，没又提交， 绿色表示提交成功
+
+
+6.
+
+ 1、使用Git Bash生成新的ssh key。
+   $ cd ~  #保证当前路径在”~”下
+   $ ssh-keygen -t rsa -C "xxxxxx@yy.com"  #填写真实有效的邮箱地址
+   Generating public/private rsa key pair.
+   Enter file in which to save the key (/c/Users/xxxx_000/.ssh/id_rsa):   #不填直接回车
+   Enter passphrase (empty for no passphrase):   #输入密码（可以为空）
+   Enter same passphrase again:   #再次确认密码（可以为空）
+   Your identification has been saved in /c/Users/xxxx_000/.ssh/id_rsa.   #生成的密钥
+   Your public key has been saved in /c/Users/xxxx_000/.ssh/id_rsa.pub.  #生成的公钥
+   The key fingerprint is:
+   e3:51:33:xx:xx:xx:xx:xxx:61:28:83:e2:81 xxxxxx@yy.com
+
+ 2.添加ssh key到GItHub
+   登录GitHub系统；点击右上角账号头像的“▼”→Settings→SSH kyes→Add SSH key。
+
+ 3.配置账户
+  $ git config --global user.name “your_username”  #设置用户名
+  $ git config --global user.email “your_registered_github_Email”  #设置邮箱地址
+
+
+7. babel   babel-node
+
+
+8. Babel 能把你写的 JS 变成其他版本的 JS。 babel能够把JS ES6 ES7 解析成 es5
+
+
+9. .babelrc      preset 更多的是对 plugin 的继承
+
+
+10. babel index.js --out-file
+
+
+11. babel src -out-dir
+
+
+
+
+
+
+
+
+
