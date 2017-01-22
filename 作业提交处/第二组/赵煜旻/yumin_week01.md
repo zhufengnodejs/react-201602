@@ -38,15 +38,18 @@ git status
 > .babelrc,plugin是插件，preset是plugin的集合。
 
 ##10.babel 编译单个 文件使用什么命令?
-> babel 输入文件名 --out-file 输出文件名
+```
+babel 输入文件名 --out-file 输出文件名
+```
 > 例: `babel input.js --out-file output.js`
 > 就会把当前目录中的input.js文件 编译到当前目录下的output.js中
 
 ##11.babel 编译文件夹 使用什么命令?
+```
 > babel 输入文件夹 --out-dir 输出文件夹
 ```
-例：babel src --out-dir dist
-```
+>例：babel src --out-dir dist
+
 > 会把子目录src的内容 编译到 dist目录中，
 > 如果在dist 后面加-w参数 
 ```
