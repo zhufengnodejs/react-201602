@@ -11,9 +11,9 @@ git branch develop
 
 ##4.git怎么切换分支,切换分支的时候应注意哪些?
 ```
-git checkout branch_name
+切换分支：git checkout branch_name
 ```
-> 用'git status'查看当前分支状态，确保分支是nothing to commit状态
+> 用`git status`查看当前分支状态，确保分支是nothing to commit状态
 
 ##5.怎么查看git的状态,结果中的红色表示什么?绿色表示什么?
 ```
@@ -22,11 +22,11 @@ git status
 > 红色代表没有add（添加到暂存区），绿色代表没有commit（提交到版本库中）
 
 ##6.请描述下如果需要把本地的git仓库以ssh key的方式提交到github的话，需要如何配置？
-- 第一步：生成一个ssh（'ssh-keygen -t rsa' ）
+- 第一步：生成一个ssh（`ssh-keygen -t rsa` ）
 - 第二步：复制公钥到github SSH and GPG keys中
-- 第三步：'git add' 
-- 第四步：'git commit -m'
-- 第五步：'git push origin master'
+- 第三步：`git add`
+- 第四步：`git commit -m`
+- 第五步：`git push origin master`
 
 ##7.babel-cli这个模块提供了那两个命令?
 > bable,babel-node
@@ -39,7 +39,7 @@ git status
 
 ##10.babel 编译单个 文件使用什么命令?
 > babel 输入文件名 --out-file 输出文件名
-> 例: 'babel input.js --out-file output.js'
+> 例: `babel input.js --out-file output.js`
 > 就会把当前目录中的input.js文件 编译到当前目录下的output.js中
 
 ##11.babel 编译文件夹 使用什么命令?
