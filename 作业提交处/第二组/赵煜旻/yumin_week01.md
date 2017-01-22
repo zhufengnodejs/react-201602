@@ -46,7 +46,7 @@ babel 输入文件名 --out-file 输出文件名
 
 ##11.babel 编译文件夹 使用什么命令?
 ```
-> babel 输入文件夹 --out-dir 输出文件夹
+babel 输入文件夹 --out-dir 输出文件夹
 ```
 >例：babel src --out-dir dist
 
