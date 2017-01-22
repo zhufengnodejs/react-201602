@@ -38,6 +38,12 @@
 
 ##11.babel 编译文件夹 使用什么命令?
 > babel 输入文件夹 --out-dir 输出文件夹
-> 例：babel src --out-dir dist
+```
+例：babel src --out-dir dist
+```
 > 会把子目录src的内容 编译到 dist目录中，
-> 如果在dist 后面加-w参数 babel src --out-dir dist -w 只要src目录中的文件发生改变 系统就会 自动编译到dist目录中
+> 如果在dist 后面加-w参数 
+```
+babel src --out-dir dist -w 
+```
+>只要src目录中的文件发生改变 系统就会 自动编译到dist目录中
