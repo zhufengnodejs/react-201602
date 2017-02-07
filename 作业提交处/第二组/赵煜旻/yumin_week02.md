@@ -1,18 +1,24 @@
 ##1.介绍一下webpack?
 >前端资源模块化管理和打包工具，可将松散的模块按照依赖和规则打包成符合生产环境部署的前端资源，也可将按需加载的模块进行代码分隔，等到实际需要的时候再异步加载。
+
 ##2.箭头函数支持的两种写法是什么？函数里的this指向谁？
->表达式
+
+表达式
 ```
 var numPlus=(a,b)=>a+b
 ```
->函数体
+函数体
+
 ```
 var numPlus=(a,b)=>{
  return a+b
 }
 ```
-> this指得是绑定定义时所在的对象，而不是使用时所在的对象.
+
+ this指得是绑定定义时所在的对象，而不是使用时所在的对象.
+
 ##3.如何用es6的方法定义一个类，？（写个小例子，里面要包括公共方法私有方法和继承）
+
 ```
 class Robot{
    constructor(name,serialNum){
@@ -41,6 +47,7 @@ class WorkerRobot extends Robot{
 }
 
 ```
+
 ##4.以下str用es6的方法怎么写？
 
 ```
@@ -48,10 +55,12 @@ var name='cat',age=1,
 var str=name+'is'+age+'years old'
 
 ```
->模板字符串写法如下
+
+模板字符串写法如下
 ```
 var tempStr=`${name} is ${age} years old.`
 ```
+
 ##5.以下对象怎么用解构赋值的方法怎么解析成一个个变量？
 
 ```
@@ -62,17 +71,20 @@ var obj={
 };
 
 ```
->解构如下
+
+解构如下
 ```
 var {a,fn4,bcc}=obj
 ```
 
 ##6.以下数组怎么用解构赋值的方法怎么解析成一个个变量？
+
 ```
     var ary=['cat','dog','fox']
 
 ```
->解构如下
+
+解构如下
 ```
 var [cat,dog,fox]=['cat','dog','fox'];
 console.log(cat);
@@ -81,10 +93,12 @@ console.log(fox);
 ```
 
 ##7.es6函数怎么定义默认参数？怎么传任意参数的？（写个函数小例子）
+
 >默认传参
 ```
 var numPlus=(a=1,b=2)=>a+b;
 ```
+
 >任意参数
 ```
 var numPlus2=(...keys)=>{
@@ -103,20 +117,23 @@ numPlus2(2,3,4,5,6);
 for(let i=0;i<10;i++){}
 console.log(i)//这里输出的会是undefined,i只在for循环内有效
 ```
+
 -const:常量
 ```
 const a=1;
 a=2;//这里会报错，常量只能赋值一次
 ```
 ##9.用es6的方法写出import和export的几种方法
->import
+
+import
 ```
 import module from './module'
 import {a} from './module'
 import * as module from './module'
 
 ```
->export
+
+export
 ```
 export var a=1;
 export var dataAdd=(a,b)=>a+b;
