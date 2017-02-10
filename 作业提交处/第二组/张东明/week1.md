@@ -25,8 +25,8 @@ git status
 5.如果没有的话用ssh-keygen -t rsa -C ”{邮箱}“的方式生成一个     
 6.将公钥添加到github的账户上
 ## 7.babel-cli这个模块提供了那两个命令?
-* babel:使用babel编译文件
-* babel-node:编译并用node运行文件
+ * babel:使用babel编译文件
+ * babel-node:编译并用node运行文件  
 ## 8.babel是什么?babel能够做什么,能够解析那些语法?
 是一个js编译器，可以配合它的presets和plugins来把react,es6等语法的js代码
 编译成可供当前浏览器运行的代码。
