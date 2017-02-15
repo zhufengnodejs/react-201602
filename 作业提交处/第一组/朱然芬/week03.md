@@ -48,5 +48,4 @@ render(
 > 方法二：通过ReactDOM.findDOMNode获取，当参数是DOM，返回值就是该DOM；当参数是Component获取的是该Component render方法中的DOM
 
 ##  10.react移除节点的两个方法是哪个?
->
-
+>render(return null)和ReactDOM.unmountComponentAtNode()
