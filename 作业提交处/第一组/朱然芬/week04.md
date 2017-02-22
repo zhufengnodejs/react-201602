@@ -35,7 +35,52 @@ this.context.router.push(path);
 ```
 
 ## 5.如何手动切换路由,写个例子
->
+```
+import React,{Component,PropTypes} from 'react';
+import { browserHistory } from 'react-router';
+
+
+class Login extends Component {
+
+    constructor(props){
+        super(props);
+        this.loginFun = this.loginFun.bind(this);
+    }
+    loginFun(e){
+        e.preventDefault();
+        const _path = `/user/detail/${this.username.value}`
+        // browserHistory.push(_path);
+        this.context.router.push(_path);
+    }
+    render(){
+        return (
+            <form className="form-horizontal" role="map" onSubmit={ this.loginFun }>
+                <div className="form-group">
+                    <lable className="col-sm-2 control-label">用户名：</lable>
+                    <div className="col-sm-5">
+                        <input type="text" className="form-control" ref= { ref => this.username = ref }/>
+                    </div>
+                </div>
+                <div className="form-group">
+                    <label className="col-sm-2 control-label">密码：</label>
+                    <div className="col-sm-5">
+                        <input type="password" className="form-control" ref = { ref => this.password = ref }/>
+                    </div>
+                </div>
+                <div className="form-actions col-sm-offset-3">
+                    <button type="submit" className="btn btn-primary">登录</button>
+                </div>
+            </form>
+        )
+    }
+}
+
+Login.contextTypes = {
+    router: PropTypes.object
+}
+
+export default Login
+```
 
 ## 6.怎么使组件具有context属性
 > 定义componentName.contextTypes={}
