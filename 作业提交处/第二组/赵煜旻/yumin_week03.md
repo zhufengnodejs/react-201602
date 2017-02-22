@@ -8,7 +8,7 @@
 class Counter extends Component{
   constructor(){
     super();
-    this.state{
+    this.state={
       num:0//用作状态维护，用户点击按钮就会更新这个值
     }
   }
