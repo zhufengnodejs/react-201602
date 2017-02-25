@@ -83,13 +83,22 @@ export default Login
 ```
 
 ## 6.怎么使组件具有context属性
-> 定义componentName.contextTypes={}
+```
+contextTypes: {
+    router: React.PropTypes.object
+},
+
+handleFun(event) {
+    this.context.router.push(path)
+}
+```
+
 
 ## 7.什么是函数式编程?
-> 就是把函数本身上升到一等公民的地位，进行编程构建
+> 不太好解释，跟其他数据类型一样处于平等地位，可以调用赋值传参返回等。
 
 ## 8.什么是纯函数?怎么写一个纯函数
-> 一个没有任何副作用，并且返回值只由输入决定的函数。例如：
+> 不依赖于且不改变它作用域之外的变量状态的函数。
 ```
 const add = (x,y) => x+y;
 ```
